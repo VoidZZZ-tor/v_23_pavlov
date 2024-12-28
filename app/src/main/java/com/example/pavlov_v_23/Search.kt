@@ -2,18 +2,14 @@ package com.example.pavlov_v_23
 
 import androidx.compose.runtime.Composable
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.CheckboxColors
 import androidx.compose.material3.CheckboxDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.MaterialTheme
@@ -34,7 +30,7 @@ class Search : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Pavlov_v_23Theme {
-                SearchScreen(context = this)
+                SearchScreen(context = this) //
             }
         }
     }
@@ -48,7 +44,6 @@ fun SearchScreen(
     textFieldOffsetX: Dp = 0.dp,
     textFieldOffsetY: Dp = 0.dp) {
     var username by remember { mutableStateOf("") }
-    var password by remember { mutableStateOf("") }
     var checkbox1Checked by remember { mutableStateOf(false) }
     var checkbox2Checked by remember { mutableStateOf(false) }
     var checkbox3Checked by remember { mutableStateOf(false) }
