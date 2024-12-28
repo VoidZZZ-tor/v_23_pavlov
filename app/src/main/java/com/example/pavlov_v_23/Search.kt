@@ -83,7 +83,7 @@ fun SearchScreen(
                     .width(50.dp)
                     .height(50.dp)
                     .padding(bottom = 16.dp),
-                contentScale = ContentScale.Crop
+                contentScale = ContentScale.Crop//
             )
             OutlinedTextField(
                 value = username,
